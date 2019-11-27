@@ -1,0 +1,10 @@
+.DS_Store
+
+# Truffle Build Folder
+build/*
+build
+node_modules/*
+node_modules
+.idea
+
+.env
