@@ -11,6 +11,9 @@
     "truffle-hdwallet-provider": "^1.0.3"
   },
   "scripts": {
-    "migrate-goerli": "truffle migrate --network goerli --reset"
+    "migrate-goerli": "truffle migrate --network goerli --reset --verbose-rpc"
+  },
+  "dependencies": {
+    "web3-provider-engine": "^15.0.4"
   }
 }

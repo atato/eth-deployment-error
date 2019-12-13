@@ -9,10 +9,10 @@
 var Migrations = artifacts.require("./Migrations.sol");
 
 module.exports = function(deployer) {
-  for (let i=0; i<500; i++) {
+  for (let i=1; i<=500; i++) {
       deployer.deploy( Migrations )
           .then( () => {
-              console.log( "Migrations contract deployed" )
+              console.log( `Migrations contract deployed ${i} times` )
           } )
           .catch( err => {
               console.error( err )

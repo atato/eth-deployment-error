@@ -6,6 +6,9 @@
  * @author: Atato Co., Ltd.
  */
 require('dotenv').config();
+var NonceTrackerSubprovider = require("web3-provider-engine/subproviders/nonce-tracker")
+
+
 const HDWalletProvider = require("truffle-hdwallet-provider");
 const privateKeys = [process.env.PRIVATEKEY];
 const web3Provider = process.env.WEB3_PROVIDER;
@@ -26,13 +29,21 @@ module.exports = {
       gas: "7800000"
     },
     goerli: {
+      // provider: function () {
+      //   return new HDWalletProvider(privateKeys, web3Provider, 0, privateKeys.length);
+      // },
       provider: function () {
-        return new HDWalletProvider(privateKeys, web3Provider, 0, privateKeys.length);
+        var wallet = new HDWalletProvider(privateKeys, web3Provider, 0, privateKeys.length);
+        var nonceTracker = new NonceTrackerSubprovider()
+        wallet.engine._providers.unshift(nonceTracker)
+        nonceTracker.setEngine(wallet.engine)
+        return wallet
       },
       network_id: "*",
       gas: "7000000",
       gasPrice: "10000000000",
-      confirmation: 2,
+      websockets: true, // (default: false)
+      confirmations: 2, // (default: 0)
       timeoutBlocks: 5000,
       skipDryRun: true
     }
