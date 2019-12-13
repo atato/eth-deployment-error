@@ -1,0 +1,537 @@
+truffle-issue-repro |    > confirmation number: 2 (block: 1813423)
+truffle-issue-repro | Migrations contract deployed 20 times
+truffle-issue-repro |    > {
+truffle-issue-repro |    >   "jsonrpc": "2.0",
+truffle-issue-repro |    >   "id": 1296,
+truffle-issue-repro |    >   "method": "eth_getBlockByNumber",
+truffle-issue-repro |    >   "params": [
+truffle-issue-repro |    >     "latest",
+truffle-issue-repro |    >     false
+truffle-issue-repro |    >   ]
+truffle-issue-repro |    > }
+truffle-issue-repro |  <   {
+truffle-issue-repro |  <     "id": 1296,
+truffle-issue-repro |  <     "jsonrpc": "2.0",
+truffle-issue-repro |  <     "result": {
+truffle-issue-repro |  <       "difficulty": "0x1",
+truffle-issue-repro |  <       "extraData": "0x726f6e696e6b61697a656e0000000000000000000000000000000000000000000133c9e358decada0fb9c20df7585c07046c37ad2b4c3a5a84b4bbceb6ed50b30985c1d1691e105e4a27cb26c172acdc6cc0
+1d7bcdcd1f998c3e73bc869fa28001",
+truffle-issue-repro |  <       "gasLimit": "0x7a1200",
+truffle-issue-repro |  <       "gasUsed": "0x16d062",
+truffle-issue-repro |  <       "hash": "0x56c2aa57b5727640a99f9a2de5edd84694c62a18c0fdc0954a1d078771707e78",
+truffle-issue-repro |  <       "logsBloom": "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000200000000000000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000100000000000000000000000000000000000000000000001000000000040000000000000000000000000000000000000000000000000000000000008000000000000000000000000000000000000000000000000000000000000000000
+00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000008000000000000000000",
+truffle-issue-repro |  <       "miner": "0x0000000000000000000000000000000000000000",
+truffle-issue-repro |  <       "mixHash": "0x0000000000000000000000000000000000000000000000000000000000000000",
+truffle-issue-repro |  <       "nonce": "0x0000000000000000",
+truffle-issue-repro |  <       "number": "0x1babaf",
+truffle-issue-repro |  <       "parentHash": "0xe4b021c351d0bfdad7a251884d1efa01ebad00d75b5ccfda597513ea8100d3cb",
+truffle-issue-repro |  <       "receiptsRoot": "0xa12b55bc6d9148a10325b5239e5dfa44cce8ebfe829710f9288eeb3e4eecadff",
+truffle-issue-repro |  <       "sha3Uncles": "0x1dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347",
+truffle-issue-repro |  <       "size": "0xb04",
+truffle-issue-repro |  <       "stateRoot": "0x1f65d6aac70b3c3dcabb38b274d453db95008f08a212accb24fe212d3a1a574c",
+truffle-issue-repro |  <       "timestamp": "0x5df33ac3",
+truffle-issue-repro |  <       "totalDifficulty": "0x2a61f1",
+truffle-issue-repro |  <       "transactions": [
+truffle-issue-repro |  <         "0xbe32a7b0ac0f58a495ba747918b7490d8317ea24d2f269d3feb9908eb3821f5b",
+truffle-issue-repro |  <         "0xbc67e44d5b03aec1022131978194dde7c224364bfb23bf7139c311bfb4f112ca"
+truffle-issue-repro |  <       ],
+truffle-issue-repro |  <       "transactionsRoot": "0xacb97bd83042013661456237ee7f3de541d7378956210923a2c4d18dc4c8298f",
+truffle-issue-repro |  <       "uncles": []
+truffle-issue-repro |  <     }
+truffle-issue-repro |  <   }
+truffle-issue-repro |    > {
+truffle-issue-repro |    >   "jsonrpc": "2.0",
+truffle-issue-repro |    >   "id": 1297,
+truffle-issue-repro |    >   "method": "eth_getBlockByNumber",
+truffle-issue-repro |    >   "params": [
+truffle-issue-repro |    >     "latest",
+truffle-issue-repro |    >     false
+truffle-issue-repro |    >   ]
+truffle-issue-repro |    > }
+truffle-issue-repro |  <   {
+truffle-issue-repro |  <     "id": 1297,
+truffle-issue-repro |  <     "jsonrpc": "2.0",
+truffle-issue-repro |  <     "result": {
+truffle-issue-repro |  <       "difficulty": "0x1",
+truffle-issue-repro |  <       "extraData": "0x726f6e696e6b61697a656e0000000000000000000000000000000000000000000133c9e358decada0fb9c20df7585c07046c37ad2b4c3a5a84b4bbceb6ed50b30985c1d1691e105e4a27cb26c172acdc6cc0
+1d7bcdcd1f998c3e73bc869fa28001",
+truffle-issue-repro |  <       "gasLimit": "0x7a1200",
+truffle-issue-repro |  <       "gasUsed": "0x16d062",
+truffle-issue-repro |  <       "hash": "0x56c2aa57b5727640a99f9a2de5edd84694c62a18c0fdc0954a1d078771707e78",
+truffle-issue-repro |  <       "logsBloom": "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000200000000000000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000100000000000000000000000000000000000000000000001000000000040000000000000000000000000000000000000000000000000000000000008000000000000000000000000000000000000000000000000000000000000000000
+00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000008000000000000000000",
+truffle-issue-repro |  <       "miner": "0x0000000000000000000000000000000000000000",
+truffle-issue-repro |  <       "mixHash": "0x0000000000000000000000000000000000000000000000000000000000000000",
+truffle-issue-repro |  <       "nonce": "0x0000000000000000",
+truffle-issue-repro |  <       "number": "0x1babaf",
+truffle-issue-repro |  <       "parentHash": "0xe4b021c351d0bfdad7a251884d1efa01ebad00d75b5ccfda597513ea8100d3cb",
+truffle-issue-repro |  <       "receiptsRoot": "0xa12b55bc6d9148a10325b5239e5dfa44cce8ebfe829710f9288eeb3e4eecadff",
+truffle-issue-repro |  <       "sha3Uncles": "0x1dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347",
+truffle-issue-repro |  <       "size": "0xb04",
+truffle-issue-repro |  <       "stateRoot": "0x1f65d6aac70b3c3dcabb38b274d453db95008f08a212accb24fe212d3a1a574c",
+truffle-issue-repro |  <       "timestamp": "0x5df33ac3",
+truffle-issue-repro |  <       "totalDifficulty": "0x2a61f1",
+truffle-issue-repro |  <       "transactions": [
+truffle-issue-repro |  <         "0xbe32a7b0ac0f58a495ba747918b7490d8317ea24d2f269d3feb9908eb3821f5b",
+truffle-issue-repro |  <         "0xbc67e44d5b03aec1022131978194dde7c224364bfb23bf7139c311bfb4f112ca"
+truffle-issue-repro |  <       ],
+truffle-issue-repro |  <       "transactionsRoot": "0xacb97bd83042013661456237ee7f3de541d7378956210923a2c4d18dc4c8298f",
+truffle-issue-repro |  <       "uncles": []
+truffle-issue-repro |  <     }
+truffle-issue-repro |  <   }
+truffle-issue-repro |    > {
+truffle-issue-repro |    >   "jsonrpc": "2.0",
+truffle-issue-repro |    >   "id": 1298,
+truffle-issue-repro |    >   "method": "eth_getBlockByNumber",
+truffle-issue-repro |    >   "params": [
+truffle-issue-repro |    >     "latest",
+truffle-issue-repro |    >     false
+truffle-issue-repro |    >   ]
+truffle-issue-repro |    > }
+truffle-issue-repro |  <   {
+truffle-issue-repro |  <     "id": 1298,
+truffle-issue-repro |  <     "jsonrpc": "2.0",
+truffle-issue-repro |  <     "result": {
+truffle-issue-repro |  <       "difficulty": "0x1",
+truffle-issue-repro |  <       "extraData": "0x726f6e696e6b61697a656e0000000000000000000000000000000000000000000133c9e358decada0fb9c20df7585c07046c37ad2b4c3a5a84b4bbceb6ed50b30985c1d1691e105e4a27cb26c172acdc6cc0
+1d7bcdcd1f998c3e73bc869fa28001",
+truffle-issue-repro |  <       "gasLimit": "0x7a1200",
+truffle-issue-repro |  <       "gasUsed": "0x16d062",
+truffle-issue-repro |  <       "hash": "0x56c2aa57b5727640a99f9a2de5edd84694c62a18c0fdc0954a1d078771707e78",
+truffle-issue-repro |  <       "logsBloom": "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000200000000000000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000100000000000000000000000000000000000000000000001000000000040000000000000000000000000000000000000000000000000000000000008000000000000000000000000000000000000000000000000000000000000000000
+00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000008000000000000000000",
+truffle-issue-repro |  <       "miner": "0x0000000000000000000000000000000000000000",
+truffle-issue-repro |  <       "mixHash": "0x0000000000000000000000000000000000000000000000000000000000000000",
+truffle-issue-repro |  <       "nonce": "0x0000000000000000",
+truffle-issue-repro |  <       "number": "0x1babaf",
+truffle-issue-repro |  <       "parentHash": "0xe4b021c351d0bfdad7a251884d1efa01ebad00d75b5ccfda597513ea8100d3cb",
+truffle-issue-repro |  <       "receiptsRoot": "0xa12b55bc6d9148a10325b5239e5dfa44cce8ebfe829710f9288eeb3e4eecadff",
+truffle-issue-repro |  <       "sha3Uncles": "0x1dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347",
+truffle-issue-repro |  <       "size": "0xb04",
+truffle-issue-repro |  <       "stateRoot": "0x1f65d6aac70b3c3dcabb38b274d453db95008f08a212accb24fe212d3a1a574c",
+truffle-issue-repro |  <       "timestamp": "0x5df33ac3",
+truffle-issue-repro |  <       "totalDifficulty": "0x2a61f1",
+truffle-issue-repro |  <       "transactions": [
+truffle-issue-repro |  <         "0xbe32a7b0ac0f58a495ba747918b7490d8317ea24d2f269d3feb9908eb3821f5b",
+truffle-issue-repro |  <         "0xbc67e44d5b03aec1022131978194dde7c224364bfb23bf7139c311bfb4f112ca"
+truffle-issue-repro |  <       ],
+truffle-issue-repro |  <       "transactionsRoot": "0xacb97bd83042013661456237ee7f3de541d7378956210923a2c4d18dc4c8298f",
+truffle-issue-repro |  <       "uncles": []
+truffle-issue-repro |  <     }
+truffle-issue-repro |  <   }
+truffle-issue-repro |    > {
+truffle-issue-repro |    >   "jsonrpc": "2.0",
+truffle-issue-repro |    >   "id": 1299,
+truffle-issue-repro |    >   "method": "eth_estimateGas",
+truffle-issue-repro |    >   "params": [
+truffle-issue-repro |    >     {
+truffle-issue-repro |    >       "from": "0x46777c79238bddbbd417e585ed2cc99b554d0934",
+truffle-issue-repro |    >       "gas": "0x6acfc0",
+truffle-issue-repro |    >       "gasPrice": "0x2540be400",
+truffle-issue-repro |    >       "data": "0x608060405234801561001057600080fd5b50336000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff160217905550610
+2ae806100606000396000f3fe608060405234801561001057600080fd5b506004361061004c5760003560e01c80630900f01014610051578063445df0ac146100955780638da5cb5b146100b3578063fdacd576146100fd575b600080fd5b6100936004803603602081
+101561006757600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff16906020019092919050505061012b565b005b61009d6101f7565b6040518082815260200191505060405180910390f35b6100bb6101fd565b604051808273fffffffff
+fffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b6101296004803603602081101561011357600080fd5b8101908080359060200190929190505050610222565b005b60008090
+54906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff1614156101f45760008190508073fffffffffffffffffffffffffffffffffff
+fffff1663fdacd5766001546040518263ffffffff1660e01b815260040180828152602001915050600060405180830381600087803b1580156101da57600080fd5b505af11580156101ee573d6000803e3d6000fd5b50505050505b50565b60015481565b6000809054
+906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373fffffffffffffffffffffffffffffff
+fffffffff16141561027f57806001819055505b5056fea165627a7a723058203f4bfd69f72659794cdc3b3964c9c3c5e20569cbb53f309de352c50193c93faa0029"
+truffle-issue-repro |    >     }
+truffle-issue-repro |    >   ]
+truffle-issue-repro |    > }
+truffle-issue-repro |  <   {
+truffle-issue-repro |  <     "id": 1299,
+truffle-issue-repro |  <     "jsonrpc": "2.0",
+truffle-issue-repro |  <     "result": "0x36849"
+truffle-issue-repro |  <   }
+truffle-issue-repro |
+truffle-issue-repro |    Replacing 'Migrations'
+truffle-issue-repro |    ----------------------
+truffle-issue-repro |    > {
+truffle-issue-repro |    >   "jsonrpc": "2.0",
+truffle-issue-repro |    >   "id": 1300,
+truffle-issue-repro |    >   "method": "eth_getBlockByNumber",
+truffle-issue-repro |    >   "params": [
+truffle-issue-repro |    >     "latest",
+truffle-issue-repro |    >     false
+truffle-issue-repro |    >   ]
+truffle-issue-repro |    > }
+truffle-issue-repro |    > {
+truffle-issue-repro |    >   "jsonrpc": "2.0",
+truffle-issue-repro |    >   "id": 1301,
+truffle-issue-repro |    >   "method": "eth_blockNumber",
+truffle-issue-repro |    >   "params": []
+truffle-issue-repro |    > }
+truffle-issue-repro |  <   {
+truffle-issue-repro |  <     "id": 1301,
+truffle-issue-repro |  <     "jsonrpc": "2.0",
+truffle-issue-repro |  <     "result": "0x1babaf"
+truffle-issue-repro |  <   }
+truffle-issue-repro |  <   {
+truffle-issue-repro |  <     "id": 1300,
+truffle-issue-repro |  <     "jsonrpc": "2.0",
+truffle-issue-repro |  <     "result": {
+truffle-issue-repro |  <       "difficulty": "0x1",
+truffle-issue-repro |  <       "extraData": "0x726f6e696e6b61697a656e0000000000000000000000000000000000000000000133c9e358decada0fb9c20df7585c07046c37ad2b4c3a5a84b4bbceb6ed50b30985c1d1691e105e4a27cb26c172acdc6cc0
+1d7bcdcd1f998c3e73bc869fa28001",
+truffle-issue-repro |  <       "gasLimit": "0x7a1200",
+truffle-issue-repro |  <       "gasUsed": "0x16d062",
+truffle-issue-repro |  <       "hash": "0x56c2aa57b5727640a99f9a2de5edd84694c62a18c0fdc0954a1d078771707e78",
+truffle-issue-repro |  <       "logsBloom": "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000200000000000000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000100000000000000000000000000000000000000000000001000000000040000000000000000000000000000000000000000000000000000000000008000000000000000000000000000000000000000000000000000000000000000000
+00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000008000000000000000000",
+truffle-issue-repro |  <       "miner": "0x0000000000000000000000000000000000000000",
+truffle-issue-repro |  <       "mixHash": "0x0000000000000000000000000000000000000000000000000000000000000000",
+truffle-issue-repro |  <       "nonce": "0x0000000000000000",
+truffle-issue-repro |  <       "number": "0x1babaf",
+truffle-issue-repro |  <       "parentHash": "0xe4b021c351d0bfdad7a251884d1efa01ebad00d75b5ccfda597513ea8100d3cb",
+truffle-issue-repro |  <       "receiptsRoot": "0xa12b55bc6d9148a10325b5239e5dfa44cce8ebfe829710f9288eeb3e4eecadff",
+truffle-issue-repro |  <       "sha3Uncles": "0x1dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347",
+truffle-issue-repro |  <       "size": "0xb04",
+truffle-issue-repro |  <       "stateRoot": "0x1f65d6aac70b3c3dcabb38b274d453db95008f08a212accb24fe212d3a1a574c",
+truffle-issue-repro |  <       "timestamp": "0x5df33ac3",
+truffle-issue-repro |  <       "totalDifficulty": "0x2a61f1",
+truffle-issue-repro |  <       "transactions": [
+truffle-issue-repro |  <         "0xbe32a7b0ac0f58a495ba747918b7490d8317ea24d2f269d3feb9908eb3821f5b",
+truffle-issue-repro |  <         "0xbc67e44d5b03aec1022131978194dde7c224364bfb23bf7139c311bfb4f112ca"
+truffle-issue-repro |  <       ],
+truffle-issue-repro |  <       "transactionsRoot": "0xacb97bd83042013661456237ee7f3de541d7378956210923a2c4d18dc4c8298f",
+truffle-issue-repro |  <       "uncles": []
+truffle-issue-repro |  <     }
+truffle-issue-repro |  <   }
+truffle-issue-repro |    > {
+truffle-issue-repro |    >   "jsonrpc": "2.0",
+truffle-issue-repro |    >   "id": 1302,
+truffle-issue-repro |    >   "method": "eth_sendTransaction",
+truffle-issue-repro |    >   "params": [
+truffle-issue-repro |    >     {
+truffle-issue-repro |    >       "from": "0x46777c79238bddbbd417e585ed2cc99b554d0934",
+truffle-issue-repro |    >       "gas": "0x6acfc0",
+truffle-issue-repro |    >       "gasPrice": "0x2540be400",
+truffle-issue-repro |    >       "data": "0x608060405234801561001057600080fd5b50336000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff160217905550610
+2ae806100606000396000f3fe608060405234801561001057600080fd5b506004361061004c5760003560e01c80630900f01014610051578063445df0ac146100955780638da5cb5b146100b3578063fdacd576146100fd575b600080fd5b6100936004803603602081
+101561006757600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff16906020019092919050505061012b565b005b61009d6101f7565b6040518082815260200191505060405180910390f35b6100bb6101fd565b604051808273fffffffff
+fffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b6101296004803603602081101561011357600080fd5b8101908080359060200190929190505050610222565b005b60008090
+54906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff1614156101f45760008190508073fffffffffffffffffffffffffffffffffff
+fffff1663fdacd5766001546040518263ffffffff1660e01b815260040180828152602001915050600060405180830381600087803b1580156101da57600080fd5b505af11580156101ee573d6000803e3d6000fd5b50505050505b50565b60015481565b6000809054
+906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373fffffffffffffffffffffffffffffff
+fffffffff16141561027f57806001819055505b5056fea165627a7a723058203f4bfd69f72659794cdc3b3964c9c3c5e20569cbb53f309de352c50193c93faa0029"
+truffle-issue-repro |    >     }
+truffle-issue-repro |    >   ]
+truffle-issue-repro |    > }
+truffle-issue-repro |  <   {
+truffle-issue-repro |  <     "id": 1302,
+truffle-issue-repro |  <     "jsonrpc": "2.0",
+truffle-issue-repro |  <     "result": "0x36679b92723fb23fbd44ff93397185fadac8b83912d58194c08dc8928d19e8e7"
+truffle-issue-repro |  <   }
+truffle-issue-repro |    > {
+truffle-issue-repro |    >   "jsonrpc": "2.0",
+truffle-issue-repro |    >   "id": 1303,
+truffle-issue-repro |    >   "method": "eth_getTransactionReceipt",
+truffle-issue-repro |    >   "params": [
+truffle-issue-repro |    >     "0x36679b92723fb23fbd44ff93397185fadac8b83912d58194c08dc8928d19e8e7"
+truffle-issue-repro |    >   ]
+truffle-issue-repro |    > }
+truffle-issue-repro | - Blocks: 0            Seconds: 0
+truffle-issue-repro |    > transaction hash:    0x36679b92723fb23fbd44ff93397185fadac8b83912d58194c08dc8928d19e8e7
+truffle-issue-repro |  <   {
+truffle-issue-repro |  <     "id": 1303,
+truffle-issue-repro |  <     "jsonrpc": "2.0",
+truffle-issue-repro |  <     "result": null
+truffle-issue-repro |  <   }
+truffle-issue-repro |    > {
+truffle-issue-repro |    >   "jsonrpc": "2.0",
+truffle-issue-repro |    >   "id": 1304,
+truffle-issue-repro |    >   "method": "eth_getTransactionReceipt",
+truffle-issue-repro |    >   "params": [
+truffle-issue-repro |    >     "0x36679b92723fb23fbd44ff93397185fadac8b83912d58194c08dc8928d19e8e7"
+truffle-issue-repro |    >   ]
+truffle-issue-repro |    > }
+truffle-issue-repro |  <   {
+truffle-issue-repro |  <     "id": 1304,
+truffle-issue-repro |  <     "jsonrpc": "2.0",
+truffle-issue-repro |  <     "result": null
+truffle-issue-repro |  <   }
+truffle-issue-repro |    > {
+truffle-issue-repro |    >   "jsonrpc": "2.0",
+truffle-issue-repro |    >   "id": 1305,
+truffle-issue-repro |    >   "method": "eth_getTransactionReceipt",
+truffle-issue-repro |    >   "params": [
+truffle-issue-repro |    >     "0x36679b92723fb23fbd44ff93397185fadac8b83912d58194c08dc8928d19e8e7"
+truffle-issue-repro |    >   ]
+truffle-issue-repro |    > }
+truffle-issue-repro |  <   {
+truffle-issue-repro |  <     "id": 1305,
+truffle-issue-repro |  <     "jsonrpc": "2.0",
+truffle-issue-repro |  <     "result": null
+truffle-issue-repro |  <   }
+truffle-issue-repro |    > {
+truffle-issue-repro |    >   "jsonrpc": "2.0",
+truffle-issue-repro |    >   "id": 1306,
+truffle-issue-repro |    >   "method": "eth_blockNumber",
+truffle-issue-repro |    >   "params": []
+truffle-issue-repro |    > }
+truffle-issue-repro |    > {
+truffle-issue-repro |    >   "jsonrpc": "2.0",
+truffle-issue-repro |    >   "id": 1307,
+truffle-issue-repro |    >   "method": "eth_getTransactionReceipt",
+truffle-issue-repro |    >   "params": [
+truffle-issue-repro |    >     "0x36679b92723fb23fbd44ff93397185fadac8b83912d58194c08dc8928d19e8e7"
+truffle-issue-repro |    >   ]
+truffle-issue-repro |    > }
+truffle-issue-repro |  <   {
+truffle-issue-repro |  <     "id": 1306,
+truffle-issue-repro |  <     "jsonrpc": "2.0",
+truffle-issue-repro |  <     "result": "0x1babaf"
+truffle-issue-repro |  <   }
+truffle-issue-repro |  <   {
+truffle-issue-repro |  <     "id": 1307,
+truffle-issue-repro |  <     "jsonrpc": "2.0",
+truffle-issue-repro |  <     "result": null
+truffle-issue-repro |  <   }
+truffle-issue-repro |    > {
+truffle-issue-repro |    >   "jsonrpc": "2.0",
+truffle-issue-repro |    >   "id": 1308,
+truffle-issue-repro |    >   "method": "eth_getTransactionReceipt",
+truffle-issue-repro |    >   "params": [
+truffle-issue-repro |    >     "0x36679b92723fb23fbd44ff93397185fadac8b83912d58194c08dc8928d19e8e7"
+truffle-issue-repro |    >   ]
+truffle-issue-repro |    > }
+truffle-issue-repro |    > {
+truffle-issue-repro |    >   "jsonrpc": "2.0",
+truffle-issue-repro |    >   "id": 1309,
+truffle-issue-repro |    >   "method": "eth_getTransactionReceipt",
+truffle-issue-repro |    >   "params": [
+truffle-issue-repro |    >     "0x36679b92723fb23fbd44ff93397185fadac8b83912d58194c08dc8928d19e8e7"
+truffle-issue-repro |    >   ]
+truffle-issue-repro |    > }
+truffle-issue-repro |  <   {
+truffle-issue-repro |  <     "id": 1308,
+truffle-issue-repro |  <     "jsonrpc": "2.0",
+truffle-issue-repro |  <     "result": null
+truffle-issue-repro |  <   }
+truffle-issue-repro |  <   {
+truffle-issue-repro |  <     "id": 1309,
+truffle-issue-repro |  <     "jsonrpc": "2.0",
+truffle-issue-repro |  <     "result": null
+truffle-issue-repro |  <   }
+truffle-issue-repro |    > {
+truffle-issue-repro |    >   "jsonrpc": "2.0",
+truffle-issue-repro |    >   "id": 1310,
+truffle-issue-repro |    >   "method": "eth_getTransactionReceipt",
+truffle-issue-repro |    >   "params": [
+truffle-issue-repro |    >     "0x36679b92723fb23fbd44ff93397185fadac8b83912d58194c08dc8928d19e8e7"
+truffle-issue-repro |    >   ]
+truffle-issue-repro |    > }
+truffle-issue-repro |  <   {
+truffle-issue-repro |  <     "id": 1310,
+truffle-issue-repro |  <     "jsonrpc": "2.0",
+truffle-issue-repro |  <     "result": null
+truffle-issue-repro |  <   }
+truffle-issue-repro |    > {
+truffle-issue-repro |    >   "jsonrpc": "2.0",
+truffle-issue-repro |    >   "id": 1311,
+truffle-issue-repro |    >   "method": "eth_blockNumber",
+truffle-issue-repro |    >   "params": []
+truffle-issue-repro |    > }
+truffle-issue-repro |    > {
+truffle-issue-repro |    >   "jsonrpc": "2.0",
+truffle-issue-repro |    >   "id": 1312,
+truffle-issue-repro |    >   "method": "eth_getTransactionReceipt",
+truffle-issue-repro |    >   "params": [
+truffle-issue-repro |    >     "0x36679b92723fb23fbd44ff93397185fadac8b83912d58194c08dc8928d19e8e7"
+truffle-issue-repro |    >   ]
+truffle-issue-repro |    > }
+truffle-issue-repro |  <   {
+truffle-issue-repro |  <     "id": 1311,
+truffle-issue-repro |  <     "jsonrpc": "2.0",
+truffle-issue-repro |  <     "result": "0x1babaf"
+truffle-issue-repro |  <   }
+truffle-issue-repro |  <   {
+truffle-issue-repro |  <     "id": 1312,
+truffle-issue-repro |  <     "jsonrpc": "2.0",
+truffle-issue-repro |  <     "result": null
+truffle-issue-repro |  <   }
+truffle-issue-repro |    > {
+truffle-issue-repro |    >   "jsonrpc": "2.0",
+truffle-issue-repro |    >   "id": 1313,
+truffle-issue-repro |    >   "method": "eth_getTransactionReceipt",
+truffle-issue-repro |    >   "params": [
+truffle-issue-repro |    >     "0x36679b92723fb23fbd44ff93397185fadac8b83912d58194c08dc8928d19e8e7"
+truffle-issue-repro |    >   ]
+truffle-issue-repro |    > }
+truffle-issue-repro |  <   {
+truffle-issue-repro |  <     "id": 1313,
+truffle-issue-repro |  <     "jsonrpc": "2.0",
+truffle-issue-repro |  <     "result": null
+truffle-issue-repro |  <   }
+truffle-issue-repro |    > {
+truffle-issue-repro |    >   "jsonrpc": "2.0",
+truffle-issue-repro |    >   "id": 1314,
+truffle-issue-repro |    >   "method": "eth_getTransactionReceipt",
+truffle-issue-repro |    >   "params": [
+truffle-issue-repro |    >     "0x36679b92723fb23fbd44ff93397185fadac8b83912d58194c08dc8928d19e8e7"
+truffle-issue-repro |    >   ]
+truffle-issue-repro |    > }
+truffle-issue-repro |  <   {
+truffle-issue-repro |  <     "id": 1314,
+truffle-issue-repro |  <     "jsonrpc": "2.0",
+truffle-issue-repro |  <     "result": null
+truffle-issue-repro |  <   }
+truffle-issue-repro |    > {
+truffle-issue-repro |    >   "jsonrpc": "2.0",
+truffle-issue-repro |    >   "id": 1315,
+truffle-issue-repro |    >   "method": "eth_getTransactionReceipt",
+truffle-issue-repro |    >   "params": [
+truffle-issue-repro |    >     "0x36679b92723fb23fbd44ff93397185fadac8b83912d58194c08dc8928d19e8e7"
+truffle-issue-repro |    >   ]
+truffle-issue-repro |    > }
+truffle-issue-repro |  <   {
+truffle-issue-repro |  <     "id": 1315,
+truffle-issue-repro |  <     "jsonrpc": "2.0",
+truffle-issue-repro |  <     "result": null
+truffle-issue-repro |  <   }
+truffle-issue-repro |    > {
+truffle-issue-repro |    >   "jsonrpc": "2.0",
+truffle-issue-repro |    >   "id": 1316,
+truffle-issue-repro |    >   "method": "eth_blockNumber",
+truffle-issue-repro |    >   "params": []
+truffle-issue-repro |    > }
+truffle-issue-repro |    > {
+truffle-issue-repro |    >   "jsonrpc": "2.0",
+truffle-issue-repro |    >   "id": 1317,
+truffle-issue-repro |    >   "method": "eth_getTransactionReceipt",
+truffle-issue-repro |    >   "params": [
+truffle-issue-repro |    >     "0x36679b92723fb23fbd44ff93397185fadac8b83912d58194c08dc8928d19e8e7"
+truffle-issue-repro |    >   ]
+truffle-issue-repro |    > }
+truffle-issue-repro |  <   {
+truffle-issue-repro |  <     "id": 1316,
+truffle-issue-repro |  <     "jsonrpc": "2.0",
+truffle-issue-repro |  <     "result": "0x1babb0"
+truffle-issue-repro |  <   }
+truffle-issue-repro |  <   {
+truffle-issue-repro |  <     "id": 1317,
+truffle-issue-repro |  <     "jsonrpc": "2.0",
+truffle-issue-repro |  <     "result": null
+truffle-issue-repro |  <   }
+truffle-issue-repro |    > {
+truffle-issue-repro |    >   "jsonrpc": "2.0",
+truffle-issue-repro |    >   "id": 1318,
+truffle-issue-repro |    >   "method": "eth_getTransactionReceipt",
+truffle-issue-repro |    >   "params": [
+truffle-issue-repro |    >     "0x36679b92723fb23fbd44ff93397185fadac8b83912d58194c08dc8928d19e8e7"
+truffle-issue-repro |    >   ]
+truffle-issue-repro |    > }
+truffle-issue-repro |  <   {
+truffle-issue-repro |  <     "id": 1318,
+truffle-issue-repro |  <     "jsonrpc": "2.0",
+truffle-issue-repro |  <     "result": {
+truffle-issue-repro |  <       "blockHash": "0xe3abe0bebb205c9ccb9794a080ea50a75f6dc41fea33f5cb0bc6769a5e578806",
+truffle-issue-repro |  <       "blockNumber": "0x1babb0",
+truffle-issue-repro |  <       "contractAddress": "0x059ff79886e2b6b8f904202d511a134f341f1017",
+truffle-issue-repro |  <       "cumulativeGasUsed": "0x36849",
+truffle-issue-repro |  <       "from": "0x46777c79238bddbbd417e585ed2cc99b554d0934",
+truffle-issue-repro |  <       "gasUsed": "0x36849",
+truffle-issue-repro |  <       "logs": [],
+truffle-issue-repro |  <       "logsBloom": "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+truffle-issue-repro |  <       "status": "0x1",
+truffle-issue-repro |  <       "to": null,
+truffle-issue-repro |  <       "transactionHash": "0x36679b92723fb23fbd44ff93397185fadac8b83912d58194c08dc8928d19e8e7",
+truffle-issue-repro |  <       "transactionIndex": "0x0"
+truffle-issue-repro |  <     }
+truffle-issue-repro |  <   }
+truffle-issue-repro |    > {
+truffle-issue-repro |    >   "jsonrpc": "2.0",
+truffle-issue-repro |    >   "id": 1319,
+truffle-issue-repro |    >   "method": "eth_getCode",
+truffle-issue-repro |    >   "params": [
+truffle-issue-repro |    >     "0x059ff79886e2b6b8f904202d511a134f341f1017",
+truffle-issue-repro |    >     "latest"
+truffle-issue-repro |    >   ]
+truffle-issue-repro |    > }
+truffle-issue-repro |    > {
+truffle-issue-repro |    >   "jsonrpc": "2.0",
+truffle-issue-repro |    >   "id": 1320,
+truffle-issue-repro |    >   "method": "eth_getTransactionReceipt",
+truffle-issue-repro |    >   "params": [
+truffle-issue-repro |    >     "0x36679b92723fb23fbd44ff93397185fadac8b83912d58194c08dc8928d19e8e7"
+truffle-issue-repro |    >   ]
+truffle-issue-repro |    > }
+truffle-issue-repro |  <   {
+truffle-issue-repro |  <     "id": 1319,
+truffle-issue-repro |  <     "jsonrpc": "2.0",
+truffle-issue-repro |  <     "result": "0x"
+truffle-issue-repro |  <   }
+truffle-issue-repro |    > {
+truffle-issue-repro |    >   "jsonrpc": "2.0",
+truffle-issue-repro |    >   "method": "eth_call",
+truffle-issue-repro |    >   "params": [
+truffle-issue-repro |    >     {
+truffle-issue-repro |    >       "from": "0x46777c79238bddbbd417e585ed2cc99b554d0934",
+truffle-issue-repro |    >       "gas": "0x6acfc0",
+truffle-issue-repro |    >       "gasPrice": "0x2540be400",
+truffle-issue-repro |    >       "data": "0x608060405234801561001057600080fd5b50336000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff160217905550610
+2ae806100606000396000f3fe608060405234801561001057600080fd5b506004361061004c5760003560e01c80630900f01014610051578063445df0ac146100955780638da5cb5b146100b3578063fdacd576146100fd575b600080fd5b6100936004803603602081
+101561006757600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff16906020019092919050505061012b565b005b61009d6101f7565b6040518082815260200191505060405180910390f35b6100bb6101fd565b604051808273fffffffff
+fffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b6101296004803603602081101561011357600080fd5b8101908080359060200190929190505050610222565b005b60008090
+54906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff1614156101f45760008190508073fffffffffffffffffffffffffffffffffff
+fffff1663fdacd5766001546040518263ffffffff1660e01b815260040180828152602001915050600060405180830381600087803b1580156101da57600080fd5b505af11580156101ee573d6000803e3d6000fd5b50505050505b50565b60015481565b6000809054
+906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373fffffffffffffffffffffffffffffff
+fffffffff16141561027f57806001819055505b5056fea165627a7a723058203f4bfd69f72659794cdc3b3964c9c3c5e20569cbb53f309de352c50193c93faa0029"
+truffle-issue-repro |    >     },
+truffle-issue-repro |    >     "latest"
+truffle-issue-repro |    >   ],
+truffle-issue-repro |    >   "id": 1576221398430
+truffle-issue-repro |    > }
+truffle-issue-repro |  <   {
+truffle-issue-repro |  <     "id": 1320,
+truffle-issue-repro |  <     "jsonrpc": "2.0",
+truffle-issue-repro |  <     "result": null
+truffle-issue-repro |  <   }
+truffle-issue-repro |  <   {
+truffle-issue-repro |  <     "id": 1576221398430,
+truffle-issue-repro |  <     "jsonrpc": "2.0",
+truffle-issue-repro |  <     "result": "0x608060405234801561001057600080fd5b506004361061004c5760003560e01c80630900f01014610051578063445df0ac146100955780638da5cb5b146100b3578063fdacd576146100fd575b600080fd5b61009
+36004803603602081101561006757600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff16906020019092919050505061012b565b005b61009d6101f7565b6040518082815260200191505060405180910390f35b6100bb6101fd565b6040
+51808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b6101296004803603602081101561011357600080fd5b810190808035906020019092919050505061022
+2565b005b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff1614156101f45760008190508073ffffffffffffffffff
+ffffffffffffffffffffff1663fdacd5766001546040518263ffffffff1660e01b815260040180828152602001915050600060405180830381600087803b1580156101da57600080fd5b505af11580156101ee573d6000803e3d6000fd5b50505050505b50565b60015
+481565b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffff
+ffffffffffffffffffffffffff16141561027f57806001819055505b5056fea165627a7a723058203f4bfd69f72659794cdc3b3964c9c3c5e20569cbb53f309de352c50193c93faa0029"
+truffle-issue-repro |  <   }
+truffle-issue-repro | Migrations contract deployed 21 times
+truffle-issue-repro |    > {
+truffle-issue-repro |    >   "jsonrpc": "2.0",
+truffle-issue-repro |    >   "id": 1321,
+truffle-issue-repro |    >   "method": "eth_getBlockByNumber",
+truffle-issue-repro |    >   "params": [
+truffle-issue-repro |    >     "latest",
+truffle-issue-repro |    >     false
+truffle-issue-repro |    >   ]
+truffle-issue-repro |    > }
+truffle-issue-repro | Error: Error: Error:  *** Deployment Failed ***
+truffle-issue-repro |
+truffle-issue-repro | "Migrations" -- The contract code couldn't be stored, please check your gas limit..
+truffle-issue-repro |
+truffle-issue-repro |     at Object.run (/usr/src/app/node_modules/truffle/build/webpack:/packages/truffle-migrate/index.js:92:1)
+truffle-issue-repro |     at processTicksAndRejections (internal/process/task_queues.js:86:5)
+truffle-issue-repro | Truffle v5.0.26 (core: 5.0.26)
+truffle-issue-repro | Node v11.15.0
+truffle-issue-repro | npm ERR! code ELIFECYCLE
+truffle-issue-repro | npm ERR! errno 1
+truffle-issue-repro | npm ERR! eth-deployment-issue@0.2.0 migrate-goerli: `truffle migrate --network goerli --reset --verbose-rpc`
+truffle-issue-repro | npm ERR! Exit status 1
+truffle-issue-repro | npm ERR!
+truffle-issue-repro | npm ERR! Failed at the eth-deployment-issue@0.2.0 migrate-goerli script.
+truffle-issue-repro | npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+truffle-issue-repro |
+truffle-issue-repro | npm ERR! A complete log of this run can be found in:
+truffle-issue-repro | npm ERR!     /root/.npm/_logs/2019-12-13T07_16_40_474Z-debug.log
+truffle-issue-repro exited with code 1
